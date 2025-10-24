@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Email Marketing Automation — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Demo landing page for an Email Marketing Automation project with Mailchimp integrations, workflows and segmentation." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">EMA Demo</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Automate your email marketing. Personalize at scale.</h1>
+          <p class="lead">
+            Build welcome flows, abandoned-cart reminders and behavior-driven campaigns using Mailchimp APIs.
+            Track opens, clicks and conversions — then iterate with smart segmentation.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn-primary" href="#workflows">Try a workflow</a>
+            <a class="btn-ghost" href="#features">Learn more</a>
+          </div>
+
+          <form id="signup" class="signup-form" action="#" method="post" onsubmit="return false;">
+            <label for="email" class="visually-hidden">Email address</label>
+            <input id="email" name="email" type="email" placeholder="Your email address" required />
+            <button class="btn-secondary" type="submit">Get early access</button>
+          </form>
+
+          <ul class="meta-list">
+            <li><strong>100+</strong> automated actions</li>
+            <li><strong>99.9%</strong> delivery (demo)</li>
+            <li><strong>Realtime</strong> webhooks & tracking</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-header">
+            <div class="chip">Demo Audience</div>
+            <div class="small">Mailchimp • Segment: New subscribers</div>
+          </div>
+
+          <div class="card-body">
+            <div class="stat-row">
+              <div class="stat">
+                <div class="stat-value">1,248</div>
+                <div class="stat-label">Subscribers</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">28.4%</div>
+                <div class="stat-label">Open rate</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">3.6%</div>
+                <div class="stat-label">CTR</div>
+              </div>
+            </div>
+
+            <div class="mini-flow">
+              <div class="step">Subscribe →</div>
+              <div class="step">Welcome email</div>
+              <div class="step">48h wait</div>
+              <div class="step">If unopened → Reminder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Features</h2>
+      <p class="section-sub">Everything you need to build and measure automated email journeys.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Workflow Builder</h3>
+          <p>Create multi-step automations: triggers, waits, conditional branches and actions.</p>
+        </article>
+
+        <article class="card">
+          <h3>Segmentation</h3>
+          <p>Dynamic segments based on behavior, purchase history, or custom metadata.</p>
+        </article>
+
+        <article class="card">
+          <h3>Analytics</h3>
+          <p>Capture opens, clicks, bounces and conversions through Mailchimp webhooks and the API.</p>
+        </article>
+
+        <article class="card">
+          <h3>Integrations</h3>
+          <p>Connect e-commerce, CRMs and databases. Use the Mailchimp Marketing API or transactional emails.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflows" class="workflows container">
+      <h2>Example Workflows</h2>
+      <p class="section-sub">Prebuilt templates you can use or customize.</p>
+
+      <div class="workflow-list">
+        <div class="workflow">
+          <h4>Welcome series</h4>
+          <ol>
+            <li>Trigger: on_subscribe</li>
+            <li>Send: Welcome email (immediate)</li>
+            <li>Wait: 48 hours</li>
+            <li>Condition: opened?</li>
+            <li>Action: If not opened → Send reminder</li>
+          </ol>
+        </div>
+
+        <div class="workflow">
+          <h4>Abandoned cart</h4>
+          <ol>
+            <li>Trigger: cart_abandoned (cart id)</li>
+            <li>Wait: 2 hours – Send first reminder</li>
+            <li>Wait: 24 hours – Send discount</li>
+            <li>Action: record conversion → stop</li>
+          </ol>
+        </div>
+
+        <div class="workflow">
+          <h4>Re-engagement</h4>
+          <ol>
+            <li>Trigger: no-open 90 days</li>
+            <li>Send: Survey / offer</li>
+            <li>Action: If no response → Move to cold segment</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2>Pricing (student demo)</h2>
+      <p class="section-sub">Use these tiers as a guideline for your project demo.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <div class="price">$0</div>
+          <ul>
+            <li>Up to 1k contacts</li>
+            <li>Basic automations</li>
+            <li>Mailchimp test API</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Sign up</a>
+        </div>
+
+        <div class="pricing-card highlight">
+          <h3>Pro</h3>
+          <div class="price">$12 / mo</div>
+          <ul>
+            <li>Unlimited automations</li>
+            <li>Advanced segmentation</li>
+            <li>Webhook history</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Start trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Self-Host</h3>
+          <div class="price">Custom</div>
+          <ul>
+            <li>Source code</li>
+            <li>Deploy anywhere</li>
+            <li>Support (demo)</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Contact sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact / Demo</h2>
+      <p class="section-sub">Get the source or request a guided demo.</p>
+
+      <form class="contact-form" action="#" method="post" onsubmit="return false;">
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email2">Email</label>
+          <input id="email2" name="email2" type="email" placeholder="name@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you want to demo"></textarea>
+        </div>
+
+        <div class="form-row">
+          <button class="btn-primary" type="submit">Send request</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> EMA Demo — Built with Mailchimp API</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Docs</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small interactive bits: year + nav toggle + simple form feedback
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    // Simple form "success" feedback for demo
+    const forms = document.querySelectorAll('form');
+    forms.forEach(f => {
+      f.addEventListener('submit', () => {
+        const btn = f.querySelector('button[type="submit"]');
+        if (btn) {
+          btn.disabled = true;
+          const original = btn.textContent;
+          btn.textContent = 'Submitted — thank you';
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.textContent = original;
+            f.reset();
+          }, 1600);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
